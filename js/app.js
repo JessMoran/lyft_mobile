@@ -1,11 +1,12 @@
-$(document).ready(function() {  //función que hace desaparecer mi imagen principal
-  setTimeout(function() {
-        $("#first-section").fadeOut(1500);
-    },2000);
-});
+function validateNumber () {
+  var $containerNumber = $("#next");
 
-$(document).ready(function() { //función que hace aparecer la siguiente pantalla
-    setTimeout(function() {
-        $("#second-section").fadeIn(1500);
-    },2000);
-});
+  if($(#number).val().trim().length > 0) {
+    $containerNumber.removeAttr("disabled");
+  } else {
+    $containerNumber.attr("disabled" , true);
+  }
+}
+
+
+$(document).ready(validateNumber);
