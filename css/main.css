@@ -1,24 +1,23 @@
 /*Estilos a las secciones */
 
-#first-section{
+#first-section,#last{
   background-image: url("../assets/images/lyft.png");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  position: absolute;
   width: 100%;
 }
 
 #second-section{
-  align-items: flex-end;
   background-image: url("../assets/images/car.png");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   display: none;
-  display: flex;
   height: 100vh;
-  justify-content: center;
+  position: absolute;
   width: 100%;
 }
 
@@ -37,6 +36,29 @@ a:hover{
   color: #000;
 }
 
+.principalBtn{
+  background: none;
+  border: 3px solid #000;
+  color:#000;
+  font-size: 2em;
+  font-weight: bold;
+  height: 5vh;
+  margin-left: 30%;
+  margin-top: 20%;
+  width: 20%;
+}
+
+.principalBtn2{
+  background: none;
+  border:3px solid #000;
+  color:#000;
+  font-size: 2em;
+  font-weight: bold;
+  height: 5vh;
+  margin-top: 20%;
+  width: 20%;
+}
+
 /*Estilos segunda vista */
 
 h1 {
@@ -51,5 +73,15 @@ h1 {
 }
 
 .next{
-  color: #ff00bb;
+  background-color: #ff00bb;
+  color: #fff;
+  width: 100%;
+}
+
+#check{
+  position: relative;
+  height: 30vh;
+  margin-top: 70vh;
+  margin-left: 40%;
+  width: 30%;
 }
