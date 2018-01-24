@@ -1,7 +1,15 @@
+var $numberInput = $("#number");
+
+
+function loadPage (){
+  $numberInput.keyup(validateNumber);
+}
+
+
 function validateNumber () {
   var $containerNumber = $("#next");
 
-  if($(#number).val().trim().length > 0) {
+  if($(this).val().trim().length > 0) {
     $containerNumber.removeAttr("disabled");
   } else {
     $containerNumber.attr("disabled" , true);
@@ -9,4 +17,4 @@ function validateNumber () {
 }
 
 
-$(document).ready(validateNumber);
+$(document).ready(loadPage);
